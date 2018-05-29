@@ -313,25 +313,25 @@ Idiap_TestData = [Idiap_TestDistortion  Idiap_TestGlcm Idiap_TestLBP];
 
 
 % linear SVM
-Idiap_Model_1 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 2 -g 0.0313 -t 2');
-[Idiap_predict_label_1, Idiap_accuracy_1, Idiap_dec_values1] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_1);
-
-Idiap_Model_2 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 32 -g 0.0313 -t 2');
-[Idiap_predict_label_2, Idiap_accuracy_2, Idiap_dec_values2] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_2);
-
-Idiap_Model_3 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 8 -g 0.0078125 -t 2');
-[Idiap_predict_label_3, Idiap_accuracy_3, Idiap_dec_values3] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_3);
-
-Idiap_Model_4 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 0.125 -g 0.0078125 -t 2');
-[Idiap_predict_label_4, Idiap_accuracy_4, Idiap_dec_values4] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_4);
-
-Idiap_Model_5 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 0.125 -g 0.0038125 -t 2');
-[Idiap_predict_label_5, Idiap_accuracy_5, Idiap_dec_values5] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_5);
-
+% Idiap_Model_1 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 2 -g 0.0313 -t 2');
+% [Idiap_predict_label_1, Idiap_accuracy_1, Idiap_dec_values1] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_1);
+% 
+% Idiap_Model_2 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 32 -g 0.0313 -t 2');
+% [Idiap_predict_label_2, Idiap_accuracy_2, Idiap_dec_values2] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_2);
+% 
+% Idiap_Model_3 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 8 -g 0.0078125 -t 2');
+% [Idiap_predict_label_3, Idiap_accuracy_3, Idiap_dec_values3] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_3);
+% 
+% Idiap_Model_4 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 0.125 -g 0.0078125 -t 2');
+% [Idiap_predict_label_4, Idiap_accuracy_4, Idiap_dec_values4] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_4);
+% 
+% Idiap_Model_5 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 0.125 -g 0.0038125 -t 2');
+% [Idiap_predict_label_5, Idiap_accuracy_5, Idiap_dec_values5] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_5);
+% 
 Idiap_Model_6 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 0.225 -g 0.00048125 -t 2');
 [Idiap_predict_label_6, Idiap_accuracy_6, Idiap_dec_values6] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_6);
 
-% nogada
+% 
 Idiap_Model_5 = svmtrain(Idiap_TrainLabel, Idiap_TrainData, '-c 0.250000000000000 -g 6.10351562500000e-05');
 [Idiap_predict_label_5, Idiap_accuracy_5, Idiap_dec_values5] = svmpredict(Idiap_TestLabel, Idiap_TestData, Idiap_Model_5);
 
